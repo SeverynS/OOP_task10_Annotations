@@ -1,0 +1,5 @@
+2) объясни пожалуйста почему если у меня есть метод с аннотацией @Override
+то в случае если я попробую с помощью рефлексии проанализировать эту анотацию - то я получу null?
+MyClass.class.getMethod("xxxxxxx").getAnnotation(Override.class) <<<< null
+
+Потому что @Retention(RetentionPolicy.SOURCE)
