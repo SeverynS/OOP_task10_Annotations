@@ -25,7 +25,7 @@ class XXX{
 */
 
 public class Task1 {
-    public static void main(String[] args) throws NoSuchMethodException {
+    public static void main(String[] args) {
         int sum = 0;
 
         Object object = new Test();
@@ -35,7 +35,7 @@ public class Task1 {
         for(Field field : fields) {
                 sum += field.getDeclaredAnnotation(Number.class).value();
         }
-        
+
         System.out.println(String.format("The summary of Number annotations is %s", sum));
     }
 }
