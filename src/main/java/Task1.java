@@ -1,7 +1,6 @@
 import com.annotations.Number;
-import com.models.Test;
+import com.models.Numbers;
 import java.lang.reflect.Field;
-import java.lang.reflect.Method;
 /*реализуй для начала задачку
 по задаче
 1.1) создай аннотацию Number
@@ -28,7 +27,7 @@ public class Task1 {
     public static void main(String[] args) {
         int sum = 0;
 
-        Object object = new Test();
+        Object object = new Numbers();
         Class aClass = object.getClass();
         Field[] fields = aClass.getDeclaredFields();
 

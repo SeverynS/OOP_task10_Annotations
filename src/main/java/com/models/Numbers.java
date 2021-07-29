@@ -2,7 +2,7 @@ package com.models;
 
 import com.annotations.Number;
 
-public class Test {
+public class Numbers {
 
     @Number(value=1)
     private int field1;
